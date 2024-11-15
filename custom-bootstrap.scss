@@ -1,0 +1,14 @@
+// custom-bootstrap.scss
+
+// Step 1: Define your custom colors
+$primary: #11869F;      // Custom primary color
+// $secondary: #EFE78A;    // Custom secondary color
+$danger: #E63946;       // Custom danger color
+$success: #28A745;      // Custom success color
+$info: #17A2B8;         // Custom info color
+$warning: #FFC107;      // Custom warning color
+$light: #F8F9FA;        // Custom light color
+$dark: #343A40;         // Custom dark color
+
+// Step 2: Import Bootstrap’s SCSS files
+@import "node_modules/bootstrap/scss/bootstrap";

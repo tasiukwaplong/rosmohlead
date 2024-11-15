@@ -1,0 +1,54 @@
+/* @media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  } */
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    height: 100vh;
+    background-color:#c9c9c9;
+    display: grid;
+    place-items: center;
+}
+.navbar-nav .nav-item:hover {
+    background-color: rgba(180, 190, 203, 0.4);
+  }
+
+
+
+section {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+/* Class to hide on desktop and show on mobile */
+.mobile-only {
+    display: block;  /* Show on mobile */
+}
+
+@media (min-width: 992px) { /* Desktop breakpoint */
+    .mobile-only {
+        display: none !important; /* Hide on desktop */
+        
+    }
+    .rounded-lg-3 { border-radius: .3rem; }
+}
+
+/* Class to hide on mobile and show on desktop */
+.desktop-only {
+    display: none !important; /* Hide on mobile */
+}
+
+@media (min-width: 992px) { /* Desktop breakpoint */
+    .desktop-only {
+        display: block; /* Show on desktop */
+    }
+}
